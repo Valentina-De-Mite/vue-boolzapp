@@ -61,6 +61,10 @@ body {
   aspect-ratio: 1;
 }
 
+.avatars {
+  overflow-y: scroll;
+}
+
 .avatar:hover {
   background-color: lightgray;
 }
