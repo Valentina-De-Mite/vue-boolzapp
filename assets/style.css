@@ -35,3 +35,7 @@ body {
 .user {
   width: 60px;
 }
+
+.icons {
+  color: rgba(178, 178, 178, 255);
+}
