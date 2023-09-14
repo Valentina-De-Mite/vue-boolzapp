@@ -19,7 +19,7 @@ createApp({
       contacts: [
         {
           name: "Michele",
-          avatar: "./img/avatar_1.png",
+          avatar: "./assets/img/avatar_1_360.jpg",
           visible: true,
           messages: [
             {
@@ -41,7 +41,7 @@ createApp({
         },
         {
           name: "Fabio",
-          avatar: "./img/avatar_2.png",
+          avatar: "./assets/img/avatar_2_360.jpg",
           visible: true,
           messages: [
             {
@@ -63,7 +63,7 @@ createApp({
         },
         {
           name: "Samuele",
-          avatar: "./img/avatar_3.png",
+          avatar: "./assets/img/avatar_3_360.jpg",
           visible: true,
           messages: [
             {
@@ -85,7 +85,7 @@ createApp({
         },
         {
           name: "Alessandro B.",
-          avatar: "./img/avatar_4.png",
+          avatar: "./assets/img/avatar_4_360.jpg",
           visible: true,
           messages: [
             {
@@ -102,7 +102,7 @@ createApp({
         },
         {
           name: "Alessandro L.",
-          avatar: "./img/avatar_5.png",
+          avatar: "./assets/img/avatar_5_360.jpg",
           visible: true,
           messages: [
             {
@@ -119,7 +119,7 @@ createApp({
         },
         {
           name: "Claudia",
-          avatar: "./img/avatar_5.png",
+          avatar: "./assets/img/avatar_6_360.jpg",
           visible: true,
           messages: [
             {
@@ -141,7 +141,7 @@ createApp({
         },
         {
           name: "Federico",
-          avatar: "./img/avatar_7.png",
+          avatar: "./assets/img/avatar_7_360.jpg",
           visible: true,
           messages: [
             {
@@ -158,7 +158,7 @@ createApp({
         },
         {
           name: "Davide",
-          avatar: "./img/avatar_8.png",
+          avatar: "./assets/img/avatar_8_360.jpg",
           visible: true,
           messages: [
             {
