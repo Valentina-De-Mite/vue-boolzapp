@@ -39,3 +39,24 @@ body {
 .icons {
   color: rgba(178, 178, 178, 255);
 }
+
+.app_body {
+  height: 72vh;
+}
+
+.app_desk {
+  background-image: url("./img/bg.jpg");
+  height: 60vh;
+}
+.bgc_blue {
+  background-color: rgba(142, 218, 252, 255);
+}
+.notific {
+  height: 8vh;
+  width: 100%;
+}
+
+.circle {
+  width: 30px;
+  aspect-ratio: 1;
+}
