@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tb-colour_green: rgba(0, 150, 136, 255);
+  --tb-colour_body: rgba(220, 219, 210, 255);
+  --tb-colour_navbar_app: rgba(234, 234, 234, 255);
+  --tb-colour_light_blue: rgba(142, 218, 252, 255);
+  --tb-colour_contact: rgba(233, 235, 235, 255);
+  --tb-colour_icon: rgba(178, 178, 178, 255);
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 150, 136, 255) 5%,
+    rgba(220, 219, 210, 255) 95%
+  );
+}
+
+.container {
+  background-color: rgba(220, 219, 210, 255);
+  height: 80vh;
+}
+
+.app_navbar {
+  height: 8vh;
+  margin: 0;
+  background-color: rgba(234, 234, 234, 255);
+}
+
+.user {
+  width: 60px;
+}
