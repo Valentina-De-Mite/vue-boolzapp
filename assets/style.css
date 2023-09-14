@@ -32,7 +32,7 @@ body {
   background-color: rgba(234, 234, 234, 255);
 }
 
-.user {
+.user_img {
   width: 60px;
 }
 
@@ -59,4 +59,8 @@ body {
 .circle {
   width: 30px;
   aspect-ratio: 1;
+}
+
+.avatar:hover {
+  background-color: lightgray;
 }
