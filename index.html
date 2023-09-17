@@ -34,9 +34,10 @@
                             src="./assets/img/avatar_io_360.jpg" alt="" srcset="">
                         <p class="align-middle mt-4 ">Sofia</p>
                     </div>
-                    <div class="icons col-2 align-self-center"><i class="fa-solid fa-circle-notch"></i>
-                        <i class="fa-solid fa-message"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class=" col-2 align-self-center d-flex gap-2">
+                        <i class="fa-solid fa-circle-notch icons"></i>
+                        <i class="fa-solid fa-message icons"></i>
+                        <i class="fa-solid fa-ellipsis-vertical icons"></i>
                     </div>
 
                 </div>
@@ -48,10 +49,10 @@
 
                     </div>
 
-                    <div class="icons col-2 align-self-center ms-5">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-paperclip"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="col-2 align-self-center ms-5 d-flex gap-2">
+                        <i class="fa-solid fa-magnifying-glass icons "></i>
+                        <i class="fa-solid fa-paperclip icons"></i>
+                        <i class="fa-solid fa-ellipsis-vertical icons"></i>
                     </div>
 
                 </div>
@@ -67,8 +68,9 @@
                         <!-- <p class="ms-3 align-self-center fs-6 icons ">popo</p> -->
                     </div>
                     <div class="notific d-flex shadow">
-                        <i class="fa-solid fa-magnifying-glass align-self-center ms-5"></i><input
-                            class="ms-2 align-self-center px-5 border border-secondary-subtle rounded" type="text">
+                        <i class="fa-solid fa-magnifying-glass align-self-center ms-5 icons"></i><input
+                            class="ms-2 align-self-center px-5 border border-secondary-subtle rounded" type="text"
+                            placeholder="Cerca un contatto">
                     </div>
 
                     <div class="avatars">
@@ -91,15 +93,15 @@
                         </div>
                     </div>
 
-                    <div class="toolbar row py-2">
+                    <div class="toolbar row py-2 w-100">
                         <div class=" d-flex justify-content-around">
                             <div class="emoji">
-                                <i class="fa-solid fa-smile"></i>
+                                <i class="fa-regular fa-face-smile icons"></i>
                             </div>
                             <input type="text" v-model="newMessage" @keyup.enter="add_newMessage"
-                                placeholder="Inserisci qui il tuo messaggio">
+                                placeholder="Inserisci qui il tuo messaggio" class="w-75 rounded border-0 form-control">
                             <div class="mic">
-                                <i class="fa-solid fa-microphone"></i>
+                                <i class="fa-solid fa-microphone icons"></i>
                             </div>
                         </div>
 

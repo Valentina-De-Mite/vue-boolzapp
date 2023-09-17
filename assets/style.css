@@ -71,6 +71,10 @@ body {
   color: rgba(178, 178, 178, 255);
 }
 
+.icons:hover {
+  color: gray;
+}
+
 .app_body {
   height: 72vh;
 }
