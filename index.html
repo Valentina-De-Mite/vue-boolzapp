@@ -96,7 +96,8 @@
                             <div class="emoji">
                                 <i class="fa-solid fa-smile"></i>
                             </div>
-                            <input type="text">
+                            <input type="text" v-model="newMessage" @keyup.enter="add_newMessage"
+                                placeholder="Inserisci qui il tuo messaggio">
                             <div class="mic">
                                 <i class="fa-solid fa-microphone"></i>
                             </div>

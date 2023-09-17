@@ -10,6 +10,7 @@ createApp({
     return {
       usersFilter: "",
       newMessage: "",
+      responds: "",
       me: {
         name: "Sofia",
         avatar: "_io",
@@ -184,6 +185,26 @@ createApp({
   methods: {
     show_messages(i) {
       this.activeContact = i;
+    },
+
+    // AGGIUNGO L'INPUT DEL NUOVO MESSAGGIO
+    add_newMessage() {
+      this.contacts[this.activeContact].messages.push({
+        message: this.newMessage,
+        status: "sent",
+        date: "",
+      });
+      this.newMessage = "";
+
+      setTimeout(this.add_automaticResponse(), 3000);
+    },
+    // AGGIUNGO IL MESSAGGIO AUTOMATICO
+    add_automaticResponse() {
+      this.contacts[this.activeContact].messages.push({
+        message: "ok fantastico!",
+        status: "received",
+        date: "",
+      });
     },
   },
 }).mount("#app");
