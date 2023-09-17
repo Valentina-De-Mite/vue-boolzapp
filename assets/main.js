@@ -181,4 +181,9 @@ createApp({
       ],
     };
   },
+  methods: {
+    show_messages(i) {
+      this.activeContact = i;
+    },
+  },
 }).mount("#app");

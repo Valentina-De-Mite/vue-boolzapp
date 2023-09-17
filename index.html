@@ -43,8 +43,8 @@
                 <div class="contatto d-flex col-8">
                     <div class="avatar d-flex col-10">
                         <img class="align-self-center user_img  px-2 rounded-circle img-fluid"
-                            src="./assets/img/avatar_1_360.jpg" alt="" srcset="">
-                        <p class="align-middle mt-4">Michele</p>
+                            :src="contacts[activeContact].avatar" alt="" srcset="">
+                        <p class="align-middle mt-4">{{contacts[activeContact].name}}</p>
 
                     </div>
 
@@ -72,7 +72,8 @@
                     </div>
 
                     <div class="avatars">
-                        <div class="avatar d-flex col-12" v-for="contact in contacts">
+                        <div class="avatar d-flex col-12" v-for="(contact, i) in contacts" @click="show_messages
+                        (i)">
                             <img :src="contact.avatar" alt="" srcset=""
                                 class=" align-self-center user_img px-2 rounded-circle img-fluid">
                             <p class="align-middle mt-4 ">{{contact.name}}</p>
@@ -82,19 +83,25 @@
 
 
                 </div>
-                <div class="app_desk col-8 d-flex">
+                <div class="app_desk col-8 d-flex flex-column">
                     <div class="messages">
-                        <div class="sent">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, veritatis.
+                        <div v-for="message in contacts[activeContact].messages"
+                            :class="message.status === 'sent' ? 'sent' : 'received' ">
+                            {{message.message}}
                         </div>
-                        <div class="sent">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, veritatis.
-                        </div>
-                        <div class="received">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, veritatis.
+                    </div>
+
+                    <div class="toolbar row py-2">
+                        <div class=" d-flex justify-content-around">
+                            <div class="emoji">
+                                <i class="fa-solid fa-smile"></i>
+                            </div>
+                            <input type="text">
+                            <div class="mic">
+                                <i class="fa-solid fa-microphone"></i>
+                            </div>
                         </div>
 
-                        <!-- /.toolbar -->
                     </div>
                 </div>
 
