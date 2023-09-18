@@ -43,9 +43,13 @@
                 </div>
                 <div class="contatto d-flex col-8">
                     <div class="avatar d-flex col-10">
-                        <img class="align-self-center user_img  px-2 rounded-circle img-fluid"
+                        <img class="align-self-center user_img px-2 rounded-circle img-fluid"
                             :src="contacts[activeContact].avatar" alt="" srcset="">
-                        <p class="align-middle mt-4">{{contacts[activeContact].name}}</p>
+                        <div class="align-self-center ms-3 mt-2">
+                            <p class="align-middle  m-0">{{contacts[activeContact].name}}</p>
+                            <p class=" s">Ultimo accesso oggi alle 12:00 </p>
+                        </div>
+
 
                     </div>
 

@@ -68,7 +68,7 @@ body {
 }
 
 .icons:hover {
-  color: gray;
+  color: lightgray;
 }
 
 .app_body {
@@ -114,5 +114,5 @@ body {
 
 .s {
   font-size: 10px;
-  color: lightgray;
+  color: gray;
 }
