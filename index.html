@@ -71,13 +71,13 @@
 
                     </div>
                     <div class="notific d-flex shadow">
-                        <i class="fa-solid fa-magnifying-glass align-self-center mx-4 icons"></i><input
-                            class=" align-self-center rounded form-control w-75" type="text"
-                            placeholder="Cerca un contatto">
+                        <i class="fa-solid fa-magnifying-glass align-self-center mx-4 icons"></i>
+                        <input class=" align-self-center rounded form-control w-75" type="text" v-model="usersFilter"
+                            placeholder="Cerca un contatto" @keyup.enter="filter_contacts">
                     </div>
 
                     <div class="avatars mt-3">
-                        <div class="avatar d-flex col-12 " v-for="(contact, i) in contacts" @click="show_messages
+                        <div class="avatar d-flex col-12 " v-for="(contact, i) in filter_contacts() " @click="show_messages
                         (i)">
                             <img :src="contact.avatar" alt="" srcset=""
                                 class=" align-self-center user_img px-2 rounded-circle img-fluid">

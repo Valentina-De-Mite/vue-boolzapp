@@ -206,5 +206,16 @@ createApp({
         date: "",
       });
     },
+
+    // aggiungo il metodo per la ricerca contatto nell'array filterContacts
+    filter_contacts() {
+      const filterContacts = this.contacts.filter(
+        (contact) =>
+          contact.name
+            .toLowerCase()
+            .includes(this.usersFilter.toLowerCase()) === true
+      );
+      return filterContacts;
+    },
   },
 }).mount("#app");
