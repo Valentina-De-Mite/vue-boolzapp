@@ -60,26 +60,34 @@
 
             <div class="app_body d-flex">
                 <div class="app_contact col-4 border-end d-flex flex-column bg-white border border-secondary-subtle">
-                    <div class="notific d-flex bgc_blue shadow">
+                    <div class="notific d-flex bgc_blue shadow ">
                         <div class="icons circle align-self-center bg-white rounded-circle ps-1 pe-1 px-2 ms-5">
                             <i class="fa-regular fa-bell-slash"></i>
                         </div>
-                        <p class="ms-3 align-self-center fs-6 ">Attiva le notifiche desktop</p>
-                        <!-- <p class="ms-3 align-self-center fs-6 icons ">popo</p> -->
+                        <div class="mt-2 align-items-center ms-3 ">
+                            <p class="m-0">Ricevi notifiche di nuovi messaggi</p>
+                            <p class=" s fs-6 icons text-decoration-underline ">Attiva le notifiche desktop</p>
+                        </div>
+
                     </div>
                     <div class="notific d-flex shadow">
-                        <i class="fa-solid fa-magnifying-glass align-self-center ms-5 icons"></i><input
-                            class="ms-2 align-self-center px-5 border border-secondary-subtle rounded" type="text"
+                        <i class="fa-solid fa-magnifying-glass align-self-center mx-4 icons"></i><input
+                            class=" align-self-center rounded form-control w-75" type="text"
                             placeholder="Cerca un contatto">
                     </div>
 
-                    <div class="avatars">
-                        <div class="avatar d-flex col-12" v-for="(contact, i) in contacts" @click="show_messages
+                    <div class="avatars mt-3">
+                        <div class="avatar d-flex col-12 " v-for="(contact, i) in contacts" @click="show_messages
                         (i)">
                             <img :src="contact.avatar" alt="" srcset=""
                                 class=" align-self-center user_img px-2 rounded-circle img-fluid">
-                            <p class="align-middle mt-4 ">{{contact.name}}</p>
+                            <div class="div">
+                                <p class="m-0">{{contact.name}}</p>
+                                <p class="s">Ultimo messaggio</p>
+                            </div>
+
                         </div>
+
                     </div>
 
 
